@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/alertas.css">
+    <link rel="icon" type="image/x-icon" href="resources/favicon-16x16.png">
+    <title>GERENTE DE ALUNOS</title>
+</head>
+
+<body>
+    <div class="alert"></div>
+    <div class="box">
+
+        <form>
+            <fieldset>
+                <legend>CADASTRAR ALUNO</legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label class="labelInput" for="nome">NOME</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="number" name="ra" id="ra" class="inputUser" min=0 step=1 required>
+                    <label class="labelInput" for="ra">RA</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="number" name="idade" id="idade" class="inputUser" value="" min=0 step=1 required>
+                    <label class="labelInput" for="idade">IDADE</label>
+                </div>
+                <br>
+                <p>SEXO</p>
+                <input type="radio" id="feminino" name="sexo" value="FEMININO" required>
+                <label for="feminino">FEMININO</label>
+                <br>
+                <input type="radio" id="masculino" name="sexo" value="MASCULINO" required>
+                <label for="masculino">MASCULINO</label>
+                <br><br><br>
+                <div class="inputBox">
+                    <input type="number" name="media" id="media" class="inputUser" min=0 required>
+                    <label class="labelInput" for="media">MEDIA</label>
+                </div>
+                <br>
+                <p>RESULTADO</p>
+                <input type="radio" id="aprovado" name="resultado" value="APROVADO" required>
+                <label for="aprovado">APROVADO</label>
+                <br>
+                <input type="radio" id="reprovado" name="resultado" value="REPROVADO" required>
+                <label for="reprovado">REPROVADO</label>
+                <br><br><br>
+                <input type="button" name="submit" id="btn_cadastrar" class="button" value="CADASTRAR">
+                <input type="button" name="voltar" id="btn_voltar" class="button" value="VOLTAR">
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+<script src="scripts/cadastro.js"></script>
+
+</html>
